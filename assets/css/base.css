@@ -533,7 +533,7 @@ textarea:focus {
 }
 
 .heading-title-3 {
-    font-size: 2em;
+    font-size: 2.2em;
     font-weight: 600;
     margin-bottom: 0;
 }
@@ -541,5 +541,5 @@ textarea:focus {
 .heading-description {
     margin-top: 10px;
     font-weight: 500;
-    font-size: 1.1em;
+    font-size: 1.15em;
 }
