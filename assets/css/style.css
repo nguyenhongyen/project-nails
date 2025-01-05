@@ -94,7 +94,14 @@
     width: 6px;
     height: 6px;
 }
-
+.section-form__link{
+    color:#B1B1B1;
+    font-size: 0.95em;
+    margin-top: 10px;
+}
+.section-form__link:hover{
+    color:var(--secondary-color);
+}
 @media(max-width: 576px) {
     .section-form{
         max-width: 350px;
