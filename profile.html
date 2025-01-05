@@ -7,7 +7,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta name="theme-color" content="#ffffff">
 
-    <title>Sign up OTP</title>
+    <title>Profile</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -26,11 +26,11 @@
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-<body>
+<body class="page-theme bg-gradient">
 
-<div class="section-header bg-white position-fixed top-0 start-0 end-0 zi-10 w-100">
+<div class="section-header bg-transparent position-fixed top-0 start-0 end-0 zi-10 w-100">
     <div class="container">
-        <div class="vstack flex-row justify-content-between">
+        <div class="vstack flex-row justify-content-between position-relative">
             <a href="index.html"
                class="header-back">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -40,6 +40,9 @@
                           fill="#191E24"></path>
                 </svg>
             </a>
+            <div class="header-title text-white fw-600 position-absolute top-50 start-50 zi-2 ">
+                Profile
+            </div>
         </div>
     </div>
 
@@ -47,9 +50,9 @@
 <!-- end header-->
 
 <main class="overflow-hidden position-relative vh-100">
-    <div class="section-body section-page position-absolute top-0 start-0 w-100 h-100 overflow-hidden">
+    <div class="section-body position-absolute top-0 start-0 w-100 h-100 overflow-hidden">
         <div class="container h-100">
-            <div class="hstack justify-content-center flex-column h-100 position-relative">
+            <div class="bg-white rounded-4 hstack justify-content-center flex-column h-100 position-relative">
                 <div class="section-form__decor-left">
                     <img src="assets/images/circle1.png" width="21" height="21" alt="Circle"
                          class="circle-1 position-absolute zi-1">
@@ -73,10 +76,10 @@
                     </a>
                     <div class="section-heading">
                         <h2 class="heading-title-3">
-                            <span class="text-secondary">Phone</span> Verification
+                            <span class="text-secondary">Sign</span> in
                         </h2>
                         <div class="heading-description">
-                            Enter your OTP code here
+                            Enter your number phone
                         </div>
                     </div>
                     <div class="section-form w-100">
@@ -89,15 +92,15 @@
                                        placeholder="(000)-000-000">
                             </div>
                             <div class="mt-4">
-                                <button type="submit" class="button-theme button-theme_dark w-100" aria-label="">
-                                    Verify
+                                <button type="submit" class="button-theme button-theme_dark w-100" aria-label=""
+                                        disabled>
+                                    Next
                                 </button>
                             </div>
 
                         </form>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>

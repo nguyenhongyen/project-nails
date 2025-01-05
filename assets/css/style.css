@@ -1,11 +1,11 @@
 .section-header{
-    padding: 20px 0 15px 0;
+    padding: 20px 0;
 }
 
-.header-back {
+.section-header .header-back {
     background-color: #ECECEC;
     border-radius: 50%;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     color: var(--bs-gray-700);
@@ -16,17 +16,31 @@
     transition: var(--transition-default);
     border:1px solid #ECECEC;
 }
-.header-back svg{
+.section-header .header-back svg{
     width: 16px;
     height: 16px;
 }
-.header-back:hover{
+.section-header .header-back:hover{
     background-color:var(--secondary-color);
     color:var(--bs-white);
     border: 1px solid var(--secondary-color);
 }
-.header-back:hover svg path{
+.section-header .header-back:hover svg path{
     fill: var(--bs-white);
+}
+.section-header .header-title{
+    line-height: normal;
+    font-size: 2em;
+    transform: translate(-30%, -50%);
+}
+.page-theme .section-body{
+    padding: 90px 0 50px 0;
+}
+.page-theme .section-header .header-back{
+    background-color: var(--bs-white);
+}
+.page-theme .section-header .header-back:hover{
+    background-color: var(--secondary-color);
 }
 
 .header-logo{
@@ -61,6 +75,20 @@
 }
 .section-form .form-group-input .form-control::placeholder{
     color:#D9D9D9;
+}
+.section-form .view-pass{
+    color: #B1B1B1;
+    width: 40px;
+    height: 40px;
+    font-size: 0.9em;
+    font-weight: 400;
+    padding: 3px;
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+
 }
 .section-form__decor-left .circle-1{
     top: 20%;

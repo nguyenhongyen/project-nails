@@ -12,6 +12,7 @@
     --primary-rgb: 26, 173, 166;
 
     --secondary-color: #AC8EFA;
+    --bg-gradient:linear-gradient(to bottom,#D1C3F6,#9E7BFB);
 
     --dark-color: #111215;
     --dark-900: #1C1E23;
@@ -24,6 +25,7 @@
 
     --bg-light: #F8F8F9;
 }
+
 
 body {
     position: relative;
@@ -519,16 +521,21 @@ textarea:focus {
 .button-theme.button-theme_outline_dark:active svg path {
     fill: var(--bs-white);
 }
-
+.bg-gradient{
+    background: var(--bg-gradient) !important;
+}
 .text-secondary {
     color: var(--secondary-color) !important;
 }
 .font-heading{
-    font-family: var(--font-heading);
+    font-family: var(--font-heading) !important;
 }
 
 .section-page {
     padding: 50px 0 70px 0;
+}
+.section-page-70 {
+    padding:70px 0;
 }
 
 .section-heading {
