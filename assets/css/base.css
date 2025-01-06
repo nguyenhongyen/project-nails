@@ -12,6 +12,7 @@
     --primary-rgb: 26, 173, 166;
 
     --secondary-color: #AC8EFA;
+    --secondary-color-50:#E0D3FF;
     --bg-gradient:linear-gradient(to bottom,#D1C3F6,#9E7BFB);
 
     --dark-color: #111215;
@@ -399,7 +400,7 @@ textarea:focus {
 }
 
 .effect-path:active svg path {
-    fill: var(--primary-color);
+    fill: var(--bs-white);
 }
 
 .button-theme {
@@ -526,6 +527,9 @@ textarea:focus {
 }
 .text-secondary {
     color: var(--secondary-color) !important;
+}
+.text-gray{
+    color:#B0B2BB;
 }
 .font-heading{
     font-family: var(--font-heading) !important;
