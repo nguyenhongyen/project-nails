@@ -270,6 +270,45 @@
     width: 6px;
     height: 6px;
 }
+.profile-button__edit{
+    width: 30px;
+    height: 30px;
+    border: 1px solid transparent;
+    position: absolute;
+    right: 11px;
+    top: 20px;
+    z-index: 2;
+    box-shadow: 0px 0px 32px 0px #00000003 !important;
+}
+.profile-button__edit:hover{
+    background-color: var(--bs-gray-100) !important;
+}
+.profile-button__edit svg{
+    width: 15px;
+    height: 15px;
+}
+.profile-form .form-group label{
+    font-size: 1.1em;
+}
+.profile-form .form-group .form-control{
+    border: 1px solid transparent;
+    border-bottom: 1px solid #D0D0D0;
+    padding: 3px 40px 3px 0;
+    border-radius: 0;
+    height: 35px;
+    font-size: 1.1em;
+    font-weight: 600;
+    color:var(--primary-color);
+}
+.profile-form .form-group .icon{
+    width: 25px;
+    height: 35px;
+
+}
+.profile-form .form-group .icon svg{
+    width: 16px;
+    height: 16px;
+}
 
 @media (max-width: 576px) {
     .section-profile__body {
