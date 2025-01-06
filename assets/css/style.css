@@ -276,10 +276,10 @@
         padding: 12px;
     }
 
-    .profile-button,
-    .profile-item {
-        font-size: 0.9em;
-    }
+    /*.profile-button,*/
+    /*.profile-item {*/
+    /*    font-size: 0.95em;*/
+    /*}*/
 
     .profile-button {
         padding: 12px 15px;
