@@ -285,8 +285,8 @@
     background-color: var(--bs-gray-100) !important;
 }
 .profile-button__edit svg{
-    width: 15px;
-    height: 15px;
+    width: 24px;
+    height: 24px;
 }
 .profile-button__edit svg path{
     fill: var(--bs-gray-900);
