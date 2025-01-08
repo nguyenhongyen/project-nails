@@ -762,6 +762,10 @@ button.card-pro__button[disabled] {
     .card-report__number {
         font-size: 2em;
     }
+    .page-report__body{
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
 }
 
 @media (max-width: 320px) {
