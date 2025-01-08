@@ -3,7 +3,7 @@
 }
 
 .section-header .header-back,
-.section-header .header-delete{
+.section-header .header-delete {
     background-color: #ECECEC;
     border-radius: 50%;
     display: inline-flex;
@@ -18,24 +18,25 @@
     border: 1px solid #ECECEC;
 }
 
-.section-header .header-back svg{
+.section-header .header-back svg {
     width: 16px;
     height: 16px;
 }
-.section-header .header-delete svg{
+
+.section-header .header-delete svg {
     width: 11px;
     height: 14px;
 }
 
 .section-header .header-back:hover,
-.section-header .header-delete:hover{
+.section-header .header-delete:hover {
     background-color: var(--secondary-color);
     color: var(--bs-white);
     border: 1px solid var(--secondary-color);
 }
 
 .section-header .header-back:hover svg path,
-.section-header .header-delete:hover svg path{
+.section-header .header-delete:hover svg path {
     fill: var(--bs-white);
 }
 
@@ -568,20 +569,24 @@ button.card-pro__button[disabled] {
     z-index: 1;
     background: linear-gradient(0deg, #2A2A2A 40.16%, rgba(0, 0, 0, 0) 94.47%);
 }
-.page-notification__body{
+
+.page-notification__body {
     overflow-y: auto;
     overflow-x: hidden;
 }
-.notification-item{
+
+.notification-item {
     font-weight: 500;
     padding: 18px 20px;
     border-radius: 15px;
 }
-.notification-item__image{
+
+.notification-item__image {
     width: 42px;
     height: 42px;
 }
-.notification-item__title{
+
+.notification-item__title {
     font-size: 1.05em;
     overflow: hidden;
     -o-text-overflow: ellipsis;
@@ -592,11 +597,13 @@ button.card-pro__button[disabled] {
     -webkit-box-orient: vertical;
     margin-bottom: 3px;
 }
+
 .notification-item__text,
-.notification-item__time{
+.notification-item__time {
     font-size: 0.8em;
 }
-.notification-item__text{
+
+.notification-item__text {
     line-height: 1.3;
     overflow: hidden;
     -o-text-overflow: ellipsis;
@@ -606,11 +613,87 @@ button.card-pro__button[disabled] {
     line-clamp: 2;
     -webkit-box-orient: vertical;
 }
-.notification-item__time .circle{
+
+.notification-item__time .circle {
     width: 7px;
     height: 7px;
     background-color: #F97255;
 }
+
+.page-report .search-select {
+    font-weight: 400;
+    border-radius: 25px;
+    padding: 3px 15px;
+    height: 40px;
+    width: 200px;
+}
+
+.page-report .search-select__input svg {
+    width: 14px;
+    height: 14px;
+}
+
+.page-report .search-select ul {
+    padding: 12px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.80);
+    box-shadow: 0px 32px 48px -8px rgb(0 0 0 / 11%), 0px 0px 14px -4px rgb(0 0 0 / 23%);
+    backdrop-filter: blur(16px);
+    min-width: 200px;
+    right: 0;
+    width: 100%;
+    transform: translateY(10px);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.page-report .search-select:hover ul {
+    transform: translateY(2px);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.page-report .search-select ul > li {
+    display: flex;
+    padding: 10px 0;
+    transition: var(--transition-default);
+    line-height: 1.3;
+    font-size: 0.9em;
+}
+
+.page-report .search-select ul > li:first-child {
+    padding-top: 0;
+}
+
+.page-report .search-select ul > li:last-child {
+    padding-bottom: 0;
+}
+
+.page-report .search-select ul > li:not(:last-child) {
+    border-bottom: 1px solid #cebef65c;
+}
+
+.card-report {
+    border-radius: 20px;
+    box-shadow: 0px 0px 32px 0px #00000003;
+}
+
+.card-report__number {
+    font-size: 2.2em;
+}
+
+.card-report__text .text {
+    line-height: 1.2;
+    transform: translateY(2px);
+}
+
+.card-report__text .icon svg {
+    width: 13px;
+    height: 14px;
+}
+
 @media (max-width: 576px) {
     .section-profile__body {
         padding: 12px;
@@ -631,7 +714,7 @@ button.card-pro__button[disabled] {
     }
 
     .customer-item,
-    .notification-item{
+    .notification-item {
         gap: 5px;
         padding: 15px;
     }
@@ -665,6 +748,17 @@ button.card-pro__button[disabled] {
         display: none;
         opacity: 0;
         visibility: hidden;
+    }
+
+    .section-header .header-title,
+    .page-pro .heading-title-3 {
+        font-size: 1.6em;
+    }
+    .card-report {
+        padding: 20px !important;
+    }
+    .card-report__number{
+        font-size: 2em;
     }
 }
 

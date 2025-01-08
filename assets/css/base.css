@@ -522,7 +522,25 @@ textarea:focus {
 .bg-gradient {
     background: var(--bg-gradient) !important;
 }
-
+.bg-orange{
+    color: #CFAE3D;
+    background-color: #FFDF75;
+}
+.bg-pink{
+    color:#DD76C7;
+    background-color: #F9B7EB;
+}
+.bg-green{
+    color:#9FAF3F;
+    background-color: #D3E27B;
+}
+.bg-blue{
+    color:#7D9CCF;
+    background-color: #BED5FC;
+}
+.text-primary{
+    color:var(--primary-color) !important;
+}
 .text-secondary {
     color: var(--secondary-color) !important;
 }
@@ -556,6 +574,11 @@ textarea:focus {
 
 .heading-title-3 {
     font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.heading-title-4 {
+    font-size: 1.6em;
     font-weight: 600;
     margin-bottom: 0;
 }
