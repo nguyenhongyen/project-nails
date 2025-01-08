@@ -754,10 +754,12 @@ button.card-pro__button[disabled] {
     .page-pro .heading-title-3 {
         font-size: 1.6em;
     }
+
     .card-report {
         padding: 20px !important;
     }
-    .card-report__number{
+
+    .card-report__number {
         font-size: 2em;
     }
 }
@@ -784,5 +786,9 @@ button.card-pro__button[disabled] {
 
     .card-pro__header {
         margin-top: 25px;
+    }
+
+    .page-report {
+        height: unset !important;
     }
 }
