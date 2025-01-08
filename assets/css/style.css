@@ -299,8 +299,8 @@
 }
 
 .profile-button__edit svg {
-    width: 22px;
-    height: 22px;
+    width: 18px;
+    height: 18px;
     position: relative;
     z-index: 1;
     pointer-events: none;
@@ -585,6 +585,9 @@ button.card-pro__button[disabled] {
         gap: 5px;
         padding: 15px;
     }
+    .card-pro{
+        margin-top: 10px;
+    }
 
     .card-pro__image {
         width: 70px;
@@ -602,6 +605,7 @@ button.card-pro__button[disabled] {
 
     .page-pro__wrap {
         overflow-y: auto;
+        overflow-x: hidden;
         padding-top: 40px;
     }
 
