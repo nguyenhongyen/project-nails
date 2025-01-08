@@ -550,7 +550,8 @@ button.card-pro__button[disabled] {
     height: 32px;
     top: 7px;
 }
-.page-welcome::after{
+
+.page-welcome::after {
     content: '';
     position: absolute;
     left: 0;
@@ -585,8 +586,9 @@ button.card-pro__button[disabled] {
         gap: 5px;
         padding: 15px;
     }
-    .card-pro{
-        margin-top: 15px;
+
+    .card-pro {
+        margin-top: 20px;
     }
 
     .card-pro__image {

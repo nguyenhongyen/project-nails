@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pridi:wght@200;300;400;500;600;700&display=swap');
+
 :root {
     --transition-default: 0.3s all ease-in-out;
     --font-heading: "Pridi", serif;
@@ -12,10 +13,10 @@
     --primary-rgb: 26, 173, 166;
 
     --secondary-color: #AC8EFA;
-    --secondary-color-50:#E0D3FF;
+    --secondary-color-50: #E0D3FF;
 
-    --gray-color:#B0B2BB;
-    --bg-gradient:linear-gradient(to bottom,#D1C3F6,#9E7BFB);
+    --gray-color: #B0B2BB;
+    --bg-gradient: linear-gradient(to bottom, #D1C3F6, #9E7BFB);
 
     --dark-color: #111215;
     --dark-900: #1C1E23;
@@ -462,13 +463,15 @@ textarea:focus {
     -o-transition: var(--transition-default);
     transition: var(--transition-default);
 }
-.button-theme:hover{
-	 opacity: 0.9;
+
+.button-theme:hover {
+    opacity: 0.9;
 }
+
 .button-theme[disabled] {
-	background-color: #ECECEC !important;
-	color: #B1B1B1 !important;
-	pointer-events: none !important;
+    background-color: #ECECEC !important;
+    color: #B1B1B1 !important;
+    pointer-events: none !important;
 }
 
 .button-theme.button-theme_primary {
@@ -498,13 +501,15 @@ textarea:focus {
     border-color: var(--dark-color);
     background-color: var(--bs-white);
 }
+
 .button-theme.button-theme_secondary {
-    background-color:var(--secondary-color);
+    background-color: var(--secondary-color);
     color: var(--bs-white);
     border-color: transparent;
 }
+
 .button-theme.button-theme_light {
-    background-color:var(--bs-white);
+    background-color: var(--bs-white);
     color: var(--dark-color);
     border-color: transparent;
 }
@@ -513,35 +518,42 @@ textarea:focus {
 .button-theme.button-theme_outline_dark:active svg path {
     fill: var(--bs-white);
 }
-.bg-gradient{
+
+.bg-gradient {
     background: var(--bg-gradient) !important;
 }
+
 .text-secondary {
     color: var(--secondary-color) !important;
 }
-.text-gray{
-    color:#B0B2BB;
+
+.text-gray {
+    color: #B0B2BB;
 }
-.font-heading{
+
+.font-heading {
     font-family: var(--font-heading) !important;
 }
 
 .section-page {
     padding: 50px 0 70px 0;
 }
+
 .section-page-70 {
-    padding:70px 0;
+    padding: 70px 0;
 }
 
 .section-heading {
     margin-bottom: 30px;
 }
+
 .heading-title {
     font-size: 2.6em;
     font-weight: 600;
     margin-bottom: 0;
     line-height: 1.15;
 }
+
 .heading-title-3 {
     font-size: 2em;
     font-weight: 600;
