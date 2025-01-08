@@ -568,6 +568,10 @@ button.card-pro__button[disabled] {
     z-index: 1;
     background: linear-gradient(0deg, #2A2A2A 40.16%, rgba(0, 0, 0, 0) 94.47%);
 }
+.page-notification__body{
+    overflow-y: auto;
+    overflow-x: hidden;
+}
 .notification-item{
     font-weight: 500;
     padding: 18px 20px;
@@ -586,6 +590,7 @@ button.card-pro__button[disabled] {
     -webkit-line-clamp: 1;
     line-clamp: 1;
     -webkit-box-orient: vertical;
+    margin-bottom: 3px;
 }
 .notification-item__text,
 .notification-item__time{
