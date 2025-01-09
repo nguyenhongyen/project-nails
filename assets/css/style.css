@@ -48,7 +48,7 @@
 }
 
 .page-theme .section-body {
-    padding: 90px 0 50px 0;
+    padding: 90px 0;
 }
 
 .page-theme .section-header .header-back {
@@ -694,6 +694,11 @@ button.card-pro__button[disabled] {
     height: 14px;
 }
 
+.page-report__body {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
 @media (max-width: 576px) {
     .section-profile__body {
         padding: 12px;
@@ -762,9 +767,12 @@ button.card-pro__button[disabled] {
     .card-report__number {
         font-size: 2em;
     }
-    .page-report__body{
-        overflow-y: auto;
-        overflow-x: hidden;
+
+}
+
+@media (max-width: 435px) {
+    .page-report {
+        height: unset !important;
     }
 }
 

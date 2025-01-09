@@ -53,8 +53,8 @@
 <main class="overflow-hidden position-relative vh-100">
     <div class="section-body position-absolute top-0 start-0 w-100 h-100 overflow-hidden">
         <div class="container h-100">
-            <div class="page-report bg-white rounded-4 p-md-4 pb-4 p-3 overflow-hidden hstack justify-content-start flex-column position-relative h-100">
-                <div class="page-report__header d-flex align-items-center justify-content-between gap-3 w-100 mb-4">
+            <div class="page-report bg-white rounded-4 p-md-4 p-3 overflow-hidden hstack justify-content-start flex-column position-relative h-100">
+                <div class="page-report__header d-flex align-items-center justify-content-between gap-3 w-100 mb-md-4 mb-3">
                     <div class="section-heading mb-0">
                         <div class="heading-title-4">
                             Overview
@@ -83,93 +83,95 @@
                         </ul>
                     </div>
                 </div>
-                <div class="page-report__body scrollbar-hidden">
-                    <div class="row row-cols-md-2 row-cols-1 g-md-3 g-2">
-                        <div class="col">
-                            <div class="card card-report bg-orange hstack align-items-start gap-1 flex-column border-0 fw-600 h-100 p-4">
-                                <div class="card-report__title text-primary">
-                                    Total Check in
-                                </div>
-                                <div class="card-report__number text-primary">
-                                    3578
-                                </div>
-                                <div class="card-report__text d-flex align-items-center gap-2">
-                                    <div class="icon flex-shrink-0 ">
-                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M8.70711 0.292892C8.31658 -0.0976315 7.68342 -0.0976315 7.29289 0.292892L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292892ZM9 17L9 1L7 1L7 17L9 17Z"
-                                                  fill="#CFAE3D"/>
-                                        </svg>
+                <div class="page-report__body w-100 scrollbar-hidden">
+                    <div class="wrap">
+                        <div class="row row-cols-md-2 row-cols-1 g-md-3 g-2">
+                            <div class="col">
+                                <div class="card card-report bg-orange hstack align-items-start gap-1 flex-column border-0 fw-600 h-100 p-4">
+                                    <div class="card-report__title text-primary">
+                                        Total Check in
                                     </div>
-                                    <div class="text">
-                                        20% in the last week
+                                    <div class="card-report__number text-primary">
+                                        3578
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card card-report bg-pink hstack align-items-start gap-1 flex-column border-0 fw-600 h-100 p-4">
-                                <div class="card-report__title text-primary">
-                                    Total Customer
-                                </div>
-                                <div class="card-report__number text-primary">
-                                    3578
-                                </div>
-                                <div class="card-report__text d-flex align-items-center gap-2">
-                                    <div class="icon flex-shrink-0 ">
-                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M8.70711 0.292892C8.31658 -0.0976315 7.68342 -0.0976315 7.29289 0.292892L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292892ZM9 17L9 1L7 1L7 17L9 17Z"
-                                                  fill="#DD76C7"/>
-                                        </svg>
-                                    </div>
-                                    <div class="text">
-                                        20% in the last week
+                                    <div class="card-report__text d-flex align-items-center gap-2">
+                                        <div class="icon flex-shrink-0 ">
+                                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8.70711 0.292892C8.31658 -0.0976315 7.68342 -0.0976315 7.29289 0.292892L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292892ZM9 17L9 1L7 1L7 17L9 17Z"
+                                                      fill="#CFAE3D"/>
+                                            </svg>
+                                        </div>
+                                        <div class="text">
+                                            20% in the last week
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col">
-                            <div class="card card-report bg-green hstack align-items-start gap-1 flex-column border-0 fw-600 h-100 p-4">
-                                <div class="card-report__title text-primary">
-                                    Total Revenue
-                                </div>
-                                <div class="card-report__number text-primary">
-                                    45.000.000
-                                </div>
-                                <div class="card-report__text d-flex align-items-center gap-2">
-                                    <div class="icon flex-shrink-0 ">
-                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M8.70711 0.292892C8.31658 -0.0976315 7.68342 -0.0976315 7.29289 0.292892L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292892ZM9 17L9 1L7 1L7 17L9 17Z"
-                                                  fill="#9FAF3F"/>
-                                        </svg>
+                            <div class="col">
+                                <div class="card card-report bg-pink hstack align-items-start gap-1 flex-column border-0 fw-600 h-100 p-4">
+                                    <div class="card-report__title text-primary">
+                                        Total Customer
                                     </div>
-                                    <div class="text">
-                                        20% in the last week
+                                    <div class="card-report__number text-primary">
+                                        3578
+                                    </div>
+                                    <div class="card-report__text d-flex align-items-center gap-2">
+                                        <div class="icon flex-shrink-0 ">
+                                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8.70711 0.292892C8.31658 -0.0976315 7.68342 -0.0976315 7.29289 0.292892L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292892ZM9 17L9 1L7 1L7 17L9 17Z"
+                                                      fill="#DD76C7"/>
+                                            </svg>
+                                        </div>
+                                        <div class="text">
+                                            20% in the last week
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col">
-                            <div class="card card-report bg-blue hstack align-items-start gap-1 flex-column border-0 fw-600 h-100 p-4">
-                                <div class="card-report__title text-primary">
-                                    Total Order
+                            <div class="col">
+                                <div class="card card-report bg-green hstack align-items-start gap-1 flex-column border-0 fw-600 h-100 p-4">
+                                    <div class="card-report__title text-primary">
+                                        Total Revenue
+                                    </div>
+                                    <div class="card-report__number text-primary">
+                                        45.000.000
+                                    </div>
+                                    <div class="card-report__text d-flex align-items-center gap-2">
+                                        <div class="icon flex-shrink-0 ">
+                                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8.70711 0.292892C8.31658 -0.0976315 7.68342 -0.0976315 7.29289 0.292892L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292892ZM9 17L9 1L7 1L7 17L9 17Z"
+                                                      fill="#9FAF3F"/>
+                                            </svg>
+                                        </div>
+                                        <div class="text">
+                                            20% in the last week
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="card-report__number text-primary">
-                                    3578
-                                </div>
-                                <div class="card-report__text d-flex align-items-center gap-2">
-                                    <div class="icon flex-shrink-0 ">
-                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M7.29289 16.7071C7.68342 17.0976 8.31658 17.0976 8.70711 16.7071L15.0711 10.3431C15.4616 9.95262 15.4616 9.31946 15.0711 8.92893C14.6805 8.53841 14.0474 8.53841 13.6569 8.92893L8 14.5858L2.34315 8.92893C1.95262 8.53841 1.31946 8.53841 0.928933 8.92893C0.538408 9.31946 0.538408 9.95262 0.928933 10.3431L7.29289 16.7071ZM7 4.37114e-08L7 16L9 16L9 -4.37114e-08L7 4.37114e-08Z"
-                                                  fill="#7D9CCF"/>
-                                        </svg>
+                            </div>
+                            <div class="col">
+                                <div class="card card-report bg-blue hstack align-items-start gap-1 flex-column border-0 fw-600 h-100 p-4">
+                                    <div class="card-report__title text-primary">
+                                        Total Order
+                                    </div>
+                                    <div class="card-report__number text-primary">
+                                        3578
+                                    </div>
+                                    <div class="card-report__text d-flex align-items-center gap-2">
+                                        <div class="icon flex-shrink-0 ">
+                                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.29289 16.7071C7.68342 17.0976 8.31658 17.0976 8.70711 16.7071L15.0711 10.3431C15.4616 9.95262 15.4616 9.31946 15.0711 8.92893C14.6805 8.53841 14.0474 8.53841 13.6569 8.92893L8 14.5858L2.34315 8.92893C1.95262 8.53841 1.31946 8.53841 0.928933 8.92893C0.538408 9.31946 0.538408 9.95262 0.928933 10.3431L7.29289 16.7071ZM7 4.37114e-08L7 16L9 16L9 -4.37114e-08L7 4.37114e-08Z"
+                                                      fill="#7D9CCF"/>
+                                            </svg>
 
-                                    </div>
-                                    <div class="text">
-                                        20% in the last week
+                                        </div>
+                                        <div class="text">
+                                            20% in the last week
+                                        </div>
                                     </div>
                                 </div>
                             </div>
