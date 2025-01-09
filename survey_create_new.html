@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Create new Survey</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <meta name="format-detection" content="telephone=no, date=no"/>
+
+    <link rel="icon" href="./assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="./assets/images/favicon.png">
+    <link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/plugins/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/plugins/fancybox/fancybox.min.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./assets/plugins/material-datetime-picker/datepicker.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body class="page-theme bg-gradient">
+
+<div class="section-header bg-transparent position-fixed top-0 start-0 end-0 zi-10 w-100">
+    <div class="container">
+        <div class="vstack flex-row justify-content-between position-relative">
+            <a href="index.html"
+               class="header-back">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                     viewBox="0 0 24 24" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M15.7071 5.29289C16.0976 5.68342 16.0976 6.31658 15.7071 6.70711L10.4142 12L15.7071 17.2929C16.0976 17.6834 16.0976 18.3166 15.7071 18.7071C15.3166 19.0976 14.6834 19.0976 14.2929 18.7071L8.29289 12.7071C7.90237 12.3166 7.90237 11.6834 8.29289 11.2929L14.2929 5.29289C14.6834 4.90237 15.3166 4.90237 15.7071 5.29289Z"
+                          fill="#191E24"></path>
+                </svg>
+            </a>
+            <div class="header-title text-white fw-600 position-absolute top-50 start-50 zi-2 ">
+                Create new survey
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- end header-->
+
+<main class="overflow-hidden position-relative vh-100">
+    <div class="section-body position-absolute top-0 start-0 w-100 h-100 overflow-hidden">
+        <div class="page-survey__create bg-white h-100 pt-5">
+            <div class="container h-100">
+                <div class="row mb-3">
+                    <div class="col">
+                        <div class="form-group">
+                            <label class="form-label" for="frm-question">
+                                Survey Question
+                            </label>
+                            <input type="text" class="form-control" id="frm-question" placeholder="Survey Question"
+                                   name="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-cols-2 g-3 mb-3">
+                    <div class="col">
+                        <div class="form-group">
+                            <label class="form-label" for="frm-date">
+                                Date
+                            </label>
+                            <input type="text" placeholder="dd-mm-yy" id="frm-date"
+                                   class="form-group w-100 handleInitMaterial">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label class="form-label" for="frm-type">
+                                Type
+                            </label>
+                            <input type="text" class="form-control" id="frm-type" placeholder="Survey Question" name="">
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-between gap-4">
+                    <label class="form-label">Input Options</label>
+                    <button class="">
+                        Option
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+<script type="text/javascript" src="./assets/plugins/jquery.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/momment.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/swiper/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/fancybox/fancybox.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/material-datetime-picker/datepicker.js"></script>
+<script type="module" src="./assets/js/app.js"></script>
+</body>
+</html>
