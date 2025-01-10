@@ -33,8 +33,22 @@ export function handleInitMaterialDate() {
         });
     }
 }
+export function handlePopupTheme() {
+    if ($('#handlePopup').length) {
+        setTimeout(function () {
+            $('body').addClass('show-popup')
+        }, 500);
+
+
+        $('#popupClose').click(function () {
+            if($('body').hasClass('show-popup')) {
+                $('body').removeClass('show-popup')
+            }
+        })
+    }
+}
 
 handleViewPassWord();
 handleInitMaterialDate();
-
+handlePopupTheme();
 

@@ -65,6 +65,11 @@
     margin-bottom: 50px;
 }
 
+.header-logo-congrats {
+    width: 200px;
+}
+
+.header-logo-congrats,
 .header-logo.header-logo-done {
     margin-bottom: 30px;
 }
@@ -772,15 +777,15 @@ button.card-pro__button[disabled] {
     height: calc(100% - 50px);
 }
 
-.page-survey__create .form-group .form-label {
+.form-theme .form-group .form-label {
     font-size: 1.15em;
     font-weight: 500;
     color: var(--primary-color);
     margin-bottom: 5px;
 }
 
-.page-survey__create .form-group .form-control,
-.page-survey__create .search-select .search-select__input {
+.form-theme .form-group .form-control,
+.form-theme .search-select {
     border: 1px solid #CECECE;
     box-shadow: 0px 0px 32px 0px #00000003;
     border-radius: 10px;
@@ -788,9 +793,10 @@ button.card-pro__button[disabled] {
     font-size: 1.05em;
     color: var(--primary-color);
     padding: 3px 12px;
+    font-weight: 500;
 }
 
-.page-survey__create .search-select ul {
+.form-theme .search-select ul {
     position: absolute;
     top: 100%;
     left: 0;
@@ -803,35 +809,53 @@ button.card-pro__button[disabled] {
     visibility: hidden;
     pointer-events: none;
     z-index: 1;
+    box-shadow: 0px 0px 32px 0px #00000003;
+    border: 1px solid #CECECE;
 }
 
-.page-survey__create .search-select:hover ul {
-    transform: translateY(5px);
+.form-theme .search-select:hover ul {
+    transform: translateY(2px);
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
 }
 
-.page-survey__create .search-select ul li {
-    padding: 10px 0;
+.form-theme .search-select ul li {
+    padding: 8px 10px;
+    font-weight: 500;
+    font-size: 0.9em;
 }
 
-.page-survey__create .search-select ul li:not(:last-child) {
+.form-theme .search-select ul li:not(:last-child) {
     border-bottom: 1px solid #cebef65c;
 }
 
-.page-survey__create .search-select .search-select__input svg {
+.form-theme .search-select .search-select__input svg,
+.form-theme .form-group .form-group__date .icon svg {
     width: 12px;
     height: 12px;
 }
 
-.page-survey__create .form-group .form-control:focus {
+.form-theme .form-group .form-control:focus {
     border: 1px solid var(--secondary-color);
 }
 
-.page-survey__create .form-group .form-control::placeholder {
+.form-theme .form-group .form-control::placeholder {
     color: #CECECE;
 }
+
+.form-theme .form-group .form-group__date .icon {
+    width: 30px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 .survey-create__button {
     font-size: 1.15em;
@@ -847,15 +871,157 @@ button.card-pro__button[disabled] {
     height: 16px;
 }
 
-.survey-create__center {
-    overflow-y: auto;
+.list-button-check .button-check__item {
+    border-radius: 20px;
+    border: 2px solid transparent;
+    font-weight: 600;
+    padding: 25px 20px;
+    color: #ADADAD;
+    font-size: 1.05em;
+    width: calc(100% / 2 - 0.5rem);
+    background: #F6F6F6;
+    text-align: start;
+    box-shadow: 0px 0px 32px 0px #00000003;
+    cursor: pointer;
+
 }
 
-.survey-create__center .survey-list {
-    height: calc(100% - 50px);
-    overflow-y: auto;
+.list-button-check .button-check__item.active,
+.list-button-check .button-check__item:hover {
+    color: var(--primary-color);
+    backdrop-filter: blur(180px);
+    background-color: var(--secondary-color-25);
+    border: 2px solid var(--secondary-color);
 }
 
+.popup-theme {
+    position: fixed;
+    z-index: 1999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: var(--transition-default);
+}
+
+.popup-theme:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -1px;
+    width: calc(100% + 1px);
+    height: 100%;
+    display: block;
+    background: var(--bs-black);
+    opacity: 0.8;
+    z-index: 1;
+}
+
+.popup-theme .popup-theme_body {
+    position: relative;
+    z-index: 2;
+}
+
+.popup-theme .popup-theme_close,
+.modal-popup__close {
+    position: absolute;
+    z-index: 3;
+    background: var(--secondary-color);
+    color: var(--bs-white);
+    height: 28px;
+    width: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.15em;
+    border-radius: 50%;
+    top: 0;
+    right: 0;
+    transition: var(--transition-default);
+}
+
+.modal-popup__close {
+    top: 10px;
+    right: 10px;
+}
+
+.popup-theme .popup-theme_close:hover,
+.modal-popup__close:hover {
+    background: var(--secondary-color-50);
+}
+
+.show-popup {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.show-popup .popup-theme {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.page-checkin {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.page-checkin__body {
+    padding: 40px;
+}
+
+.page-checkin__body::after,
+.page-checkin__body::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    top: 30px;
+    bottom: 30px;
+    background-color: #FFFFFF80;
+
+}
+
+.page-checkin__body::after {
+    left: 104%;
+    border-radius: 20px 0 0 20px;
+}
+
+.page-checkin__body::before {
+    right: 104%;
+    border-radius: 0 20px 20px 0;
+}
+
+.page-checkin .image-decor-1,
+.page-checkin .image-decor-2 {
+    position: absolute;
+    width: 190px;
+    height: 190px;
+    top: 20%;
+    z-index: 1;
+
+}
+
+.page-checkin .image-decor-1 {
+    left: -90px;
+}
+
+.page-checkin .image-decor-2 {
+    right: -90px;
+}
+
+.page-checkin__image {
+    width: 230px;
+    height: 230px;
+    transform: translateX(-15px);
+}
 
 @media (max-width: 576px) {
     .section-profile__body {
@@ -926,6 +1092,18 @@ button.card-pro__button[disabled] {
         font-size: 2em;
     }
 
+    .popup-theme .popup-theme_body {
+        max-width: calc(100% - 30px);
+        margin: 0 auto;
+    }
+
+    .page-checkin {
+        width: 80%;
+    }
+
+    .page-checkin__body {
+        padding: 30px;
+    }
 }
 
 @media (max-width: 320px) {
