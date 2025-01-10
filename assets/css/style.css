@@ -784,8 +784,8 @@ button.card-pro__button[disabled] {
     border: 1px solid #CECECE;
     box-shadow: 0px 0px 32px 0px #00000003;
     border-radius: 10px;
-    height: 45px;
-    font-size: 1.1em;
+    height: 43px;
+    font-size: 1.05em;
     color:var(--primary-color);
     padding: 3px 12px;
 }
@@ -827,6 +827,7 @@ button.card-pro__button[disabled] {
     color: #CECECE;
 }
 .survey-create__button{
+    font-size: 1.15em;
     color:var(--secondary-color);
 }
 .survey-create__button:hover{
