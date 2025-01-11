@@ -30,7 +30,7 @@
 <body class="bg-gradient">
 
 <main class="overflow-hidden position-relative vh-100">
-    <div class="page-home section-page-70 section-body position-absolute top-0 start-0 w-100 h-100 overflow-hidden">
+    <div class="page-home section-body position-absolute top-0 start-0 w-100 h-100 overflow-hidden">
         <div class="container h-100">
             <div class="d-flex flex-column h-100">
                 <div class="page-home__header d-flex align-items-start justify-content-between gap-3">
@@ -53,11 +53,11 @@
                              alt="">
                     </div>
                 </div>
-                <div class="page-home__body rounded-4 bg-white">
-                    <div class="p-4">
-                        <div class="row row-cols-2 g-3">
+                <div class="page-home__body bg-white position-relative overflow-hidden">
+                    <div class="body-wrap p-4 overflow-y scrollbar-hidden mb-5">
+                        <div class="row row-cols-md-2 row-cols-1 g-3">
                             <div class="col">
-                                <div class="card card-box box-1 d-flex flex-column gap-5 bg-blue h-100 fw-600 border-0 position-relative overflow-hidden">
+                                <div class="card card-box box-1 d-flex flex-column gap-4 h-100 fw-600 border-0 position-relative overflow-hidden">
                                     <div class="card-box__decor position-absolute zi-1">
                                         <img src="assets/images/checkin_bg.png" width="456" height="372"
                                              class="w-100 h-100 object-fit-contain" alt="">
@@ -89,7 +89,7 @@
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="card card-box box-2 d-flex flex-column gap-5 bg-blue h-100 fw-600 border-0 position-relative overflow-hidden">
+                                <div class="card card-box box-2 d-flex flex-column gap-4 h-100 fw-600 border-0 position-relative overflow-hidden">
                                     <div class="card-box__decor position-absolute zi-1">
                                         <img src="assets/images/customer_bg.png" width="278" height="214"
                                              class="w-100 h-100 object-fit-contain" alt="">
@@ -111,7 +111,7 @@
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="card card-box box-3 d-flex flex-column gap-5 bg-blue h-100 fw-600 border-0 position-relative overflow-hidden">
+                                <div class="card card-box box-3 d-flex flex-column gap-4 h-100 fw-600 border-0 position-relative overflow-hidden">
                                     <div class="card-box__decor position-absolute zi-1">
                                         <img src="assets/images/survey_bg.png" width="180" height="139"
                                              class="w-100 h-100 object-fit-contain" alt="">
@@ -133,7 +133,7 @@
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="card card-box box-4 d-flex flex-column gap-5 bg-blue h-100 fw-600 border-0 position-relative overflow-hidden">
+                                <div class="card card-box box-4 d-flex flex-column gap-4 h-100 fw-600 border-0 position-relative overflow-hidden">
                                     <div class="card-box__decor position-absolute zi-1">
                                         <img src="assets/images/report_bg.png" width="272" height="182"
 
@@ -159,7 +159,7 @@
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="card card-box box-5 d-flex flex-column gap-5 bg-blue h-100 fw-600 border-0 position-relative overflow-hidden">
+                                <div class="card card-box box-5 d-flex flex-column gap-4 h-100 fw-600 border-0 position-relative overflow-hidden">
                                     <div class="card-box__decor position-absolute zi-1">
                                         <img src="assets/images/feedbac_bg.png" width="395" height="498"
                                              class="w-100 h-100 object-fit-contain" alt="">
@@ -180,7 +180,7 @@
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="card card-box box-6 d-flex flex-column gap-5 bg-blue h-100 fw-600 border-0 position-relative overflow-hidden">
+                                <div class="card card-box box-6 d-flex flex-column gap-4 h-100 fw-600 border-0 position-relative overflow-hidden">
                                     <div class="card-box__title text-primary position-relative zi-2">
                                         Profile
                                     </div>
@@ -202,7 +202,25 @@
                             </div>
                         </div>
                     </div>
-                    <div class="page-home__footer"></div>
+                    <div class="page-home__footer d-flex align-items-center justify-content-between gap-3">
+                        <div class="title text-white fw-500">
+                            Upgrade Now
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="image">
+                                <img src="assets/images/gift.png" class="w-100 h-100 object-fit-contain" width="161"
+                                     height="161" alt="">
+                            </div>
+                            <span>
+                                <svg width="32" height="12" viewBox="0 0 32 12" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+<path d="M1 5.25C0.585786 5.25 0.25 5.58579 0.25 6C0.25 6.41421 0.585786 6.75 1 6.75L1 5.25ZM31.5303 6.53033C31.8232 6.23744 31.8232 5.76257 31.5303 5.46967L26.7574 0.696701C26.4645 0.403808 25.9896 0.403808 25.6967 0.696701C25.4038 0.989595 25.4038 1.46447 25.6967 1.75736L29.9393 6L25.6967 10.2426C25.4038 10.5355 25.4038 11.0104 25.6967 11.3033C25.9896 11.5962 26.4645 11.5962 26.7574 11.3033L31.5303 6.53033ZM1 6.75L31 6.75L31 5.25L1 5.25L1 6.75Z"
+      fill="white"/>
+</svg>
+
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

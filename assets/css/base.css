@@ -758,10 +758,6 @@ textarea:focus {
     background-color: var(--bs-white);
 }
 
-.overflow-y {
-    overflow-y: auto;
-}
-
 .section-page {
     padding: 50px 0 70px 0;
 }
