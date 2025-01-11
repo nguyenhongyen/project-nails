@@ -1270,6 +1270,10 @@ button.card-pro__button[disabled] {
 .page-home__footer .title {
     font-size: 1.35em;
 }
+.page-home__footer svg{
+    width: 30px;
+    height: 10px;
+}
 
 @media (max-width: 992px) {
     .page-checkin .image-decor-1 {
