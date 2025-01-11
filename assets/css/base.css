@@ -412,7 +412,7 @@ textarea:focus {
     -webkit-box-shadow: none;
     box-shadow: none;
     outline: none;
-    border-radius: 25px;
+    border-radius: 30px;
     border: 1px solid transparent;
     gap: 8px;
     display: -webkit-inline-box;
