@@ -27,153 +27,183 @@
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-<body class="page-theme bg-gradient">
+<body class="bg-gradient">
 
 <main class="overflow-hidden position-relative vh-100">
-    <div class="page-home section-body position-absolute top-0 start-0 w-100 h-100 overflow-hidden">
+    <div class="page-home section-page-70 section-body position-absolute top-0 start-0 w-100 h-100 overflow-hidden">
         <div class="container h-100">
-            <div class="d-flex align-items-start justify-content-between gap-3">
-                <div class="section-heading">
-                    <div class="heading-title-3 d-flex align-items-center gap-2">
-                        <span class="title"> Welcome back Minh</span>
-                        <span class="icon d-flex">
+            <div class="d-flex flex-column h-100">
+                <div class="page-home__header d-flex align-items-start justify-content-between gap-3">
+                    <div class="section-heading">
+                        <div class="heading-title-3 d-flex align-items-center gap-2">
+                            <span class="title"> Welcome back Minh</span>
+                            <span class="icon d-flex">
                            <img src="assets/images/duck.png" class="w-100 h-100 object-fit-contain" width="52"
                                 height="52" alt="">
                        </span>
-                    </div>
-                    <div class="heading-description mt-0">
-                        Have a nice day at work
-                    </div>
-                </div>
-                <div class="page-home__notification position-relative">
-                    <span class="position-absolute d-block rounded-circle"></span>
-                    <img src="assets/images/notihome.png" class="w-100 h-100 object-fit-contain" width="43" height="52"
-                         alt="">
-                </div>
-            </div>
-
-            <div class="page-report bg-white rounded-5 p-md-4 p-3 overflow-hidden hstack justify-content-start flex-column position-relative h-100">
-                <div class="page-report__header d-flex align-items-center justify-content-between gap-3 w-100 mb-md-4 mb-3">
-
-                    <div class="search-select bg-white border position-relative">
-                        <div class="search-select__input d-flex h-100 align-items-center justify-content-between gap-2">
-                            <div class="title text-gray fw-500">
-                                This week
-                            </div>
-                            <div class="icon">
-                                <svg width="19" height="19" viewBox="0 0 19 19" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M6.76859 1.97949L5.5415 3.20658L11.8353 9.50032L5.5415 15.7941L6.76859 17.0212L14.2498 9.50032L6.76859 1.97949Z"
-                                          fill="#787878"/>
-                                </svg>
-                            </div>
                         </div>
-                        <ul class="mb-0 list-unstyled transition-default position-absolute top-100 end-0 bg-white zi-2">
-                            <li>
-                                Today
-                            </li>
-                            <li>
-                                Yesterday
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="page-report__body w-100 scrollbar-hidden">
-                    <div class="wrap">
-                        <div class="row row-cols-md-2 row-cols-1 g-md-3 g-2">
-                            <div class="col">
-                                <div class="card card-report bg-orange hstack align-items-start gap-1 flex-column border-0 fw-600 h-100 p-4">
-                                    <div class="card-report__title text-primary">
-                                        Total Check in
-                                    </div>
-                                    <div class="card-report__number text-primary">
-                                        3578
-                                    </div>
-                                    <div class="card-report__text d-flex align-items-center gap-2">
-                                        <div class="icon flex-shrink-0 ">
-                                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M8.70711 0.292892C8.31658 -0.0976315 7.68342 -0.0976315 7.29289 0.292892L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292892ZM9 17L9 1L7 1L7 17L9 17Z"
-                                                      fill="#CFAE3D"/>
-                                            </svg>
-                                        </div>
-                                        <div class="text">
-                                            20% in the last week
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card card-report bg-pink hstack align-items-start gap-1 flex-column border-0 fw-600 h-100 p-4">
-                                    <div class="card-report__title text-primary">
-                                        Total Customer
-                                    </div>
-                                    <div class="card-report__number text-primary">
-                                        3578
-                                    </div>
-                                    <div class="card-report__text d-flex align-items-center gap-2">
-                                        <div class="icon flex-shrink-0 ">
-                                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M8.70711 0.292892C8.31658 -0.0976315 7.68342 -0.0976315 7.29289 0.292892L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292892ZM9 17L9 1L7 1L7 17L9 17Z"
-                                                      fill="#DD76C7"/>
-                                            </svg>
-                                        </div>
-                                        <div class="text">
-                                            20% in the last week
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card card-report bg-green hstack align-items-start gap-1 flex-column border-0 fw-600 h-100 p-4">
-                                    <div class="card-report__title text-primary">
-                                        Total Revenue
-                                    </div>
-                                    <div class="card-report__number text-primary">
-                                        45.000.000
-                                    </div>
-                                    <div class="card-report__text d-flex align-items-center gap-2">
-                                        <div class="icon flex-shrink-0 ">
-                                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M8.70711 0.292892C8.31658 -0.0976315 7.68342 -0.0976315 7.29289 0.292892L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292892ZM9 17L9 1L7 1L7 17L9 17Z"
-                                                      fill="#9FAF3F"/>
-                                            </svg>
-                                        </div>
-                                        <div class="text">
-                                            20% in the last week
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card card-report bg-blue hstack align-items-start gap-1 flex-column border-0 fw-600 h-100 p-4">
-                                    <div class="card-report__title text-primary">
-                                        Total Order
-                                    </div>
-                                    <div class="card-report__number text-primary">
-                                        3578
-                                    </div>
-                                    <div class="card-report__text d-flex align-items-center gap-2">
-                                        <div class="icon flex-shrink-0 ">
-                                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M7.29289 16.7071C7.68342 17.0976 8.31658 17.0976 8.70711 16.7071L15.0711 10.3431C15.4616 9.95262 15.4616 9.31946 15.0711 8.92893C14.6805 8.53841 14.0474 8.53841 13.6569 8.92893L8 14.5858L2.34315 8.92893C1.95262 8.53841 1.31946 8.53841 0.928933 8.92893C0.538408 9.31946 0.538408 9.95262 0.928933 10.3431L7.29289 16.7071ZM7 4.37114e-08L7 16L9 16L9 -4.37114e-08L7 4.37114e-08Z"
-                                                      fill="#7D9CCF"/>
-                                            </svg>
-
-                                        </div>
-                                        <div class="text">
-                                            20% in the last week
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="heading-description mt-0">
+                            Have a nice day at work
                         </div>
                     </div>
+                    <div class="page-home__notification position-relative">
+                        <span class="position-absolute d-block rounded-circle"></span>
+                        <img src="assets/images/notihome.png" class="w-100 h-100 object-fit-contain" width="43"
+                             height="52"
+                             alt="">
+                    </div>
                 </div>
+                <div class="page-home__body rounded-4 bg-white">
+                    <div class="p-4">
+                        <div class="row row-cols-2 g-3">
+                            <div class="col">
+                                <div class="card card-box box-1 d-flex flex-column gap-5 bg-blue h-100 fw-600 border-0 position-relative overflow-hidden">
+                                    <div class="card-box__decor position-absolute zi-1">
+                                        <img src="assets/images/checkin_bg.png" width="456" height="372"
+                                             class="w-100 h-100 object-fit-contain" alt="">
+                                    </div>
+                                    <div class="card-box__title text-primary position-relative zi-2">
+                                        Check-in
+                                    </div>
+                                    <div class="d-flex align-items-center gap-3 justify-content-between position-relative zi-2">
+                                        <div class="card-box__image d-flex align-items-center">
+                                            <div class="item rounded-circle bg-white">
+                                                <img src="assets/images/avatar2.png" width="1024" height="1014"
+                                                     class="w-100 h-100 object-fit-contain rounded-circle" alt="">
+                                            </div>
+                                            <div class="item rounded-circle bg-white">
+                                                <img src="assets/images/avatar2.png" width="1024" height="1014"
+                                                     class="w-100 h-100 object-fit-contain rounded-circle" alt="">
+                                            </div>
+                                            <div class="item rounded-circle bg-white">
+                                                <img src="assets/images/avatar2.png" width="1024" height="1014"
+                                                     class="w-100 h-100 object-fit-contain rounded-circle" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card-box__number">
+                                            234
+                                        </div>
+                                    </div>
+                                    <a href=""
+                                       class="card-box__link position-absolute top-0 start-0 w-100 h-100 zi-2"></a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card card-box box-2 d-flex flex-column gap-5 bg-blue h-100 fw-600 border-0 position-relative overflow-hidden">
+                                    <div class="card-box__decor position-absolute zi-1">
+                                        <img src="assets/images/customer_bg.png" width="278" height="214"
+                                             class="w-100 h-100 object-fit-contain" alt="">
+                                    </div>
+                                    <div class="card-box__title text-primary position-relative zi-2">
+                                        List customer
+                                    </div>
+                                    <div class="d-flex align-items-center gap-3 justify-content-between position-relative zi-2">
+                                        <div class="card-box__icon">
+                                            <img src="assets/images/customer.png" width="69" height="69"
+                                                 class="w-100 h-100 object-fit-contain" alt="">
+                                        </div>
+                                        <div class="card-box__number">
+                                            234
+                                        </div>
+                                    </div>
+                                    <a href=""
+                                       class="card-box__link position-absolute top-0 start-0 w-100 h-100 zi-2"></a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card card-box box-3 d-flex flex-column gap-5 bg-blue h-100 fw-600 border-0 position-relative overflow-hidden">
+                                    <div class="card-box__decor position-absolute zi-1">
+                                        <img src="assets/images/survey_bg.png" width="180" height="139"
+                                             class="w-100 h-100 object-fit-contain" alt="">
+                                    </div>
+                                    <div class="card-box__title text-primary position-relative zi-2">
+                                        Survey
+                                    </div>
+                                    <div class="d-flex align-items-center gap-3 justify-content-between position-relative zi-2">
+                                        <div class="card-box__icon">
+                                            <img src="assets/images/survey.png" width="82" height="82"
+                                                 class="w-100 h-100 object-fit-contain" alt="">
+                                        </div>
+                                        <div class="card-box__number">
+                                            05
+                                        </div>
+                                    </div>
+                                    <a href=""
+                                       class="card-box__link position-absolute top-0 start-0 w-100 h-100 zi-2"></a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card card-box box-4 d-flex flex-column gap-5 bg-blue h-100 fw-600 border-0 position-relative overflow-hidden">
+                                    <div class="card-box__decor position-absolute zi-1">
+                                        <img src="assets/images/report_bg.png" width="272" height="182"
 
+                                             class="w-100 h-100 object-fit-contain" alt="">
+                                    </div>
+                                    <div class="card-box__title text-primary position-relative zi-2">
+                                        Report
+                                    </div>
+                                    <div class="d-flex align-items-center gap-3 justify-content-between position-relative zi-2">
+                                        <div class="card-box__icon">
+                                            <img src="assets/images/report.png" width="90" height="90"
+                                                 class="w-100 h-100 object-fit-contain" alt="">
+                                        </div>
+                                        <div class="card-box__link">
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.13617 11.803C0.843281 12.0959 0.843281 12.5708 1.13617 12.8637C1.42907 13.1566 1.90394 13.1566 2.19683 12.8637L1.13617 11.803ZM13.0832 1.66671C13.0832 1.25249 12.7474 0.916708 12.3332 0.916708L5.58317 0.916707C5.16896 0.916707 4.83317 1.25249 4.83317 1.66671C4.83317 2.08092 5.16896 2.41671 5.58317 2.41671H11.5832V8.41671C11.5832 8.83092 11.919 9.16671 12.3332 9.16671C12.7474 9.16671 13.0832 8.83092 13.0832 8.41671L13.0832 1.66671ZM2.19683 12.8637L12.8635 2.19704L11.8028 1.13638L1.13617 11.803L2.19683 12.8637Z"
+                                                      fill="#19224D"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <a href="" class="position-absolute top-0 start-0 w-100 h-100 zi-2"></a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card card-box box-5 d-flex flex-column gap-5 bg-blue h-100 fw-600 border-0 position-relative overflow-hidden">
+                                    <div class="card-box__decor position-absolute zi-1">
+                                        <img src="assets/images/feedbac_bg.png" width="395" height="498"
+                                             class="w-100 h-100 object-fit-contain" alt="">
+                                    </div>
+                                    <div class="card-box__title text-primary position-relative zi-2">
+                                        Feedback
+                                    </div>
+                                    <div class="d-flex align-items-center gap-3 justify-content-between position-relative zi-2">
+                                        <div class="card-box__icon">
+                                            <img src="assets/images/starhome.png" width="82" height="82"
+                                                 class="w-100 h-100 object-fit-contain" alt="">
+                                        </div>
+                                        <div class="card-box__number">
+                                            24
+                                        </div>
+                                    </div>
+                                    <a href="" class="position-absolute top-0 start-0 w-100 h-100 zi-2"></a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card card-box box-6 d-flex flex-column gap-5 bg-blue h-100 fw-600 border-0 position-relative overflow-hidden">
+                                    <div class="card-box__title text-primary position-relative zi-2">
+                                        Profile
+                                    </div>
+                                    <div class="d-flex align-items-center gap-3 justify-content-between position-relative zi-2">
+                                        <div class="card-box__icon">
+                                            <img src="assets/images/profile.png" width="88" height="88"
+                                                 class="w-100 h-100 object-fit-contain" alt="">
+                                        </div>
+                                        <div class="card-box__link">
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.13617 11.803C0.843281 12.0959 0.843281 12.5708 1.13617 12.8637C1.42907 13.1566 1.90394 13.1566 2.19683 12.8637L1.13617 11.803ZM13.0832 1.66671C13.0832 1.25249 12.7474 0.916708 12.3332 0.916708L5.58317 0.916707C5.16896 0.916707 4.83317 1.25249 4.83317 1.66671C4.83317 2.08092 5.16896 2.41671 5.58317 2.41671H11.5832V8.41671C11.5832 8.83092 11.919 9.16671 12.3332 9.16671C12.7474 9.16671 13.0832 8.83092 13.0832 8.41671L13.0832 1.66671ZM2.19683 12.8637L12.8635 2.19704L11.8028 1.13638L1.13617 11.803L2.19683 12.8637Z"
+                                                      fill="#19224D"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <a href="" class="position-absolute top-0 start-0 w-100 h-100 zi-2"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-home__footer"></div>
+                </div>
             </div>
         </div>
     </div>
