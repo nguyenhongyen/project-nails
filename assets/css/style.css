@@ -802,7 +802,7 @@ button.card-pro__button[disabled] {
     box-shadow: 0px 0px 32px 0px #00000003;
     border-radius: 10px;
     height: 43px;
-    font-size: 1.05em;
+    font-size: 1em;
     color: var(--primary-color);
     padding: 3px 12px;
     font-weight: 500;
@@ -981,7 +981,8 @@ button.card-pro__button[disabled] {
     pointer-events: auto;
 }
 
-.page-checkin {
+.page-checkin,
+.form-table__number{
     margin: 0 auto;
     width: 70%;
 }
@@ -1061,7 +1062,7 @@ button.card-pro__button[disabled] {
     background-color: #D9D9D9;
     padding: 4px;
     width: calc(100% / 3 - 0.5rem);
-    height: 35px;
+    height: 38px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1097,7 +1098,8 @@ button.card-pro__button[disabled] {
 }
 
 @media (max-width: 600px) {
-    .page-checkin {
+    .page-checkin,
+    .form-table__number{
         width: 85%;
     }
 
