@@ -167,7 +167,7 @@
 }
 
 .section-form .form-group-input .form-label {
-    height: 40px;
+    height: 44px;
     font-weight: 500;
     font-size: 18px;
 }
@@ -177,9 +177,10 @@
     border-radius: 0;
     padding: 3px;
     color: var(--primary-color);
-    max-width: 150px;
+    max-width: 160px;
     font-weight: 500;
-    font-size: 1.05em;
+    font-size: 18px;
+    height: 43px;
 }
 
 .section-form .form-group-input .form-control::placeholder {
@@ -1100,7 +1101,7 @@ button.card-pro__button[disabled] {
 }
 
 
-.page-home__notification{
+.page-home__notification {
     width: 30px;
     height: 30px;
     margin-top: 8px;
@@ -1256,6 +1257,15 @@ button.card-pro__button[disabled] {
     padding: 15px 30px;
     z-index: 3;
     background: linear-gradient(90deg, #49289E 0%, #704FC2 100%);
+}
+
+.page-home__footer .decor {
+    position: absolute;
+    left: -62px;
+    bottom: -51px;
+    width: 220px;
+    height: 105px;
+    z-index: 1;
 }
 
 .page-home__footer .image {
